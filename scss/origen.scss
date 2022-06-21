@@ -1,0 +1,159 @@
+/*comentari*/
+
+@import "reset";
+@import "tipografias";
+@import "colores";
+
+
+ul {
+    list-style: none;
+    li {
+        display: inline-block;
+        margin-left: 8px;
+        padding: 8px;
+        
+    }
+    &:first-child {
+        margin: 0;
+    }
+    .transicionNav {
+        transition: all;
+        &:hover {
+            background-color: $colorSecundario;
+            border-radius: 30px;
+        }
+    }
+    
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $grey2;
+}
+
+nav {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: nav;
+}
+
+
+
+.tranformacionRedes:hover {
+    transform: scale(1.1, 1.1);
+}
+
+header {
+    height: 450px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-image: url(../imagenes/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    padding-left: 50px;
+    h2 {
+        padding-bottom: 30px;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: $black;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-area: footer;
+}
+
+.banner {
+    width: 50%;
+}
+
+.datos {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    .dato {
+        display: inline-block;
+        text-align: center;
+        margin-left: 24px;
+        margin-right: 24px;
+        h3 {
+            font-size: 50px;
+        }
+    }
+}
+
+.comentarios {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+    .comentariosDeUsuarios {
+        display: flex;
+        align-items: top;
+        justify-content: space-evenly;
+        .comentario {
+            text-align: center;
+            height: 200px;
+            width: 250px;
+            margin: 16px;
+            padding: 10px;
+            position: relative;
+            h2 {
+                font-size: 150px;
+                z-index: 0;
+                color: $acentos;
+                opacity: 50%;
+            }
+            .comillas {
+                position: absolute;
+                top: -20px;
+                left: -10px;
+            }
+         }
+     }
+}
+
+.comentar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30%;
+    margin-right: 30%;
+    
+}
+
+.button {
+    background-color: $colorPrincipal;
+    color: $white;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    text-align: center;
+    transition: all;
+    &:hover {
+        background-color: $acentos;
+    }
+}
+
+.informacion {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    text-align: center;
+    .info {
+        display: inline-block;
+        top: 50%;
+        text-align: left;
+        margin-left: 30px;
+       
+    }
+}
+
+
